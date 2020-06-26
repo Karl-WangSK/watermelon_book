@@ -1,9 +1,12 @@
 **贝叶斯算法**
+
 条件概率
 P(A,B)=P(A)*P(B|A)
 P(A,B)表示A和B同时发生的概率
 P(A)*P(B|A) 表示在A发生的概率乘以A发生的情况下B发生的概率  ----表示A和B的交集
+
 **同理 ：**
+
 P(A,B)=P(B)*P(A|B)
 所以
 P(B|A)=P(B)*P(A|B) / P(A)
@@ -12,6 +15,7 @@ P(B|A)=P(B)*P(A|B) / P(A)
 P(c|x)=P(c)*P(x|c) / P(x)
 
 **朴素贝叶斯分类器：**
+
 基于已知类别，每个属性互相独立。属性条件独立性假设
 P(c)*P(x|c) / P(x)=P(c)/P(xi) ∏ P(xi|c)
 由于P(xi)是个常量，对于每个类别来说都一样,所以
@@ -38,6 +42,7 @@ P(坏瓜)*P(青绿|坏瓜)=5/17
 
 
 **似然函数**
+
 似然（likelihood）这个词其实和概率（probability）是差不多的意思，Colins字典这么解释：The likelihood of something happening is how likely it is to happen. 你把likelihood换成probability，这解释也读得通。但是在统计里面，似然函数和概率函数却是两个不同的概念（其实也很相近就是了）。
 
 对于这个函数：
